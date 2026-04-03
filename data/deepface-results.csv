@@ -1,0 +1,89 @@
+task,metric,group,subgroup,value,notes
+gender,accuracy,DS,,0.717,Significantly below reported benchmark of 0.9744
+gender,accuracy,NoDS,,0.974,Close to reported benchmark
+gender,recall,DS,male,1.0,100% of DS men correctly classified
+gender,recall,DS,female,0.433,Only 43.3% of DS women correctly classified
+gender,recall,NoDS,male,1.0,100% of NoDS men correctly classified
+gender,recall,NoDS,female,0.800,80% of NoDS women correctly classified
+gender,false_positive_rate,DS,female,0.567,"P(predicted male | true female, DS) — more likely to misclassify DS women as male"
+gender,false_positive_rate,NoDS,female,0.200,"P(predicted male | true female, NoDS)"
+gender,false_positive_rate,DS,male,0.0,No DS men misclassified as female
+gender,false_positive_rate,NoDS,male,0.0,No NoDS men misclassified as female
+gender_x_ethnicity,accuracy,DS,Asian,0.600,6/10 correctly classified
+gender_x_ethnicity,accuracy,DS,Black,0.700,7/10
+gender_x_ethnicity,accuracy,DS,Indian,0.700,7/10
+gender_x_ethnicity,accuracy,DS,Latino_Hispanic,0.700,7/10
+gender_x_ethnicity,accuracy,DS,Middle_Eastern,0.700,7/10
+gender_x_ethnicity,accuracy,DS,White,0.900,9/10 — DS white women have highest correct classification rate
+gender_x_ethnicity,accuracy,NoDS,Asian,0.900,9/10
+gender_x_ethnicity,accuracy,NoDS,Black,0.900,9/10
+gender_x_ethnicity,accuracy,NoDS,Indian,0.900,9/10
+gender_x_ethnicity,accuracy,NoDS,Latino_Hispanic,0.700,7/10 — NoDS Latina women most likely to be misclassified
+gender_x_ethnicity,accuracy,NoDS,Middle_Eastern,1.000,10/10
+gender_x_ethnicity,accuracy,NoDS,White,1.000,10/10
+gender_x_ethnicity,female_recall,DS,Asian,0.000,0/4 Asian DS women correctly classified as female
+gender_x_ethnicity,female_recall,DS,Black,0.250,1/4
+gender_x_ethnicity,female_recall,DS,Indian,0.250,1/4
+gender_x_ethnicity,female_recall,DS,Latino_Hispanic,0.500,3/6
+gender_x_ethnicity,female_recall,DS,Middle_Eastern,0.500,3/6
+gender_x_ethnicity,female_recall,DS,White,0.833,5/6 — highest among DS women
+gender_x_ethnicity,female_recall,NoDS,Asian,0.800,4/5
+gender_x_ethnicity,female_recall,NoDS,Black,0.800,4/5
+gender_x_ethnicity,female_recall,NoDS,Indian,0.800,4/5
+gender_x_ethnicity,female_recall,NoDS,Latino_Hispanic,0.400,2/5 — lowest among NoDS women
+gender_x_ethnicity,female_recall,NoDS,Middle_Eastern,1.000,5/5
+gender_x_ethnicity,female_recall,NoDS,White,1.000,5/5
+emotion,accuracy,DS,,0.567,Similar to NoDS
+emotion,accuracy,NoDS,,0.583,
+emotion,mean_confidence_true_label,DS,,8.052,"Lower confidence even when correct, indicating uncertainty"
+emotion,mean_confidence_true_label,NoDS,,13.193,
+emotion,recall,DS,neutral,0.560,14/25
+emotion,recall,DS,happy,0.571,20/35
+emotion,recall,NoDS,neutral,0.357,10/28 — notably lower than DS neutral recall
+emotion,recall,NoDS,happy,0.781,25/32
+ethnicity,accuracy,DS,,0.383,Well below NoDS performance
+ethnicity,accuracy,NoDS,,0.667,Close to reported benchmark of 68%
+ethnicity,mean_confidence_true_label,DS,,12.09,
+ethnicity,mean_confidence_true_label,NoDS,,14.487,
+ethnicity,wrong_classification_rate,DS,,0.617,"37/60 — most common misclassification targets: Asian and White"
+ethnicity,wrong_classification_rate,NoDS,,0.333,20/60
+ethnicity,wrong_race_prob,DS,male,0.567,17/30 DS men incorrectly classified
+ethnicity,wrong_race_prob,DS,female,0.667,20/30 DS women incorrectly classified
+ethnicity,wrong_race_prob,NoDS,male,0.267,8/30
+ethnicity,wrong_race_prob,NoDS,female,0.400,12/30
+ethnicity_x_gender,male_recall,DS,Asian,0.833,5/6
+ethnicity_x_gender,male_recall,DS,Black,0.667,4/6
+ethnicity_x_gender,male_recall,DS,Indian,0.167,1/6
+ethnicity_x_gender,male_recall,DS,Latino_Hispanic,0.250,1/4
+ethnicity_x_gender,male_recall,DS,Middle_Eastern,0.000,0/4 — lowest for DS men
+ethnicity_x_gender,male_recall,DS,White,0.500,2/4
+ethnicity_x_gender,female_recall,DS,Asian,0.250,1/4
+ethnicity_x_gender,female_recall,DS,Black,0.500,2/4
+ethnicity_x_gender,female_recall,DS,Indian,0.000,0/4 — lowest for DS women
+ethnicity_x_gender,female_recall,DS,Latino_Hispanic,0.500,3/6
+ethnicity_x_gender,female_recall,DS,Middle_Eastern,0.167,1/6
+ethnicity_x_gender,female_recall,DS,White,0.500,3/6
+ethnicity_x_gender,male_recall,NoDS,Asian,1.000,5/5
+ethnicity_x_gender,male_recall,NoDS,Black,1.000,5/5
+ethnicity_x_gender,male_recall,NoDS,Indian,0.400,2/5
+ethnicity_x_gender,male_recall,NoDS,Latino_Hispanic,0.200,1/5
+ethnicity_x_gender,male_recall,NoDS,Middle_Eastern,0.800,4/5
+ethnicity_x_gender,male_recall,NoDS,White,1.000,5/5
+ethnicity_x_gender,female_recall,NoDS,Asian,1.000,5/5
+ethnicity_x_gender,female_recall,NoDS,Black,0.800,4/5
+ethnicity_x_gender,female_recall,NoDS,Indian,0.200,1/5
+ethnicity_x_gender,female_recall,NoDS,Latino_Hispanic,0.400,2/5
+ethnicity_x_gender,female_recall,NoDS,Middle_Eastern,0.200,1/5
+ethnicity_x_gender,female_recall,NoDS,White,1.000,5/5
+age,mean_absolute_error,DS,,10.583,years — vs reported benchmark of ±4.65
+age,mean_absolute_error,NoDS,,9.167,years
+age,deviation_range_min,DS,,-16,years (underestimation)
+age,deviation_range_max,DS,,23,years (overestimation)
+age,deviation_range_min,NoDS,,-7,years
+age,deviation_range_max,NoDS,,24,years
+age,predicted_age_Q1,DS,,17,years — 50% of predictions fall between Q1-Q3 regardless of actual age
+age,predicted_age_Q2,DS,,21.5,years
+age,predicted_age_Q3,DS,,27,years
+age,predicted_age_Q1,NoDS,,26,years
+age,predicted_age_Q2,NoDS,,31,years
+age,predicted_age_Q3,NoDS,,34,years

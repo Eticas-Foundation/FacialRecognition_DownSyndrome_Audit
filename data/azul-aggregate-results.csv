@@ -1,0 +1,42 @@
+metric,variable,group,value,unit,source_note
+sample_size,participants,DS,20,count,Cedown Jerez participants
+sample_size,participants,NoDS,20,count,Control group
+sample_size,male,DS,12,count,
+sample_size,female,DS,8,count,
+sample_size,smoker,DS,1,count,Low due to health recommendations against smoking in DS population
+sample_size,non_smoker,DS,19,count,
+sample_size,male,NoDS,9,count,
+sample_size,female,NoDS,11,count,
+sample_size,smoker,NoDS,8,count,
+sample_size,non_smoker,NoDS,12,count,
+age_actual_range,min,DS,19,years,
+age_actual_range,max,DS,32,years,
+age_predicted_range,min,DS,5,years,Extreme underestimation of DS women
+age_predicted_range,max,DS,39,years,
+age_actual_range,min,NoDS,19,years,
+age_actual_range,max,NoDS,32,years,
+age_predicted_range,min,NoDS,19,years,
+age_predicted_range,max,NoDS,47,years,
+age_error,mean_absolute_error,DS,7.19,years,Error rate reported as percentage in report but units are years
+age_error,mean_absolute_error,NoDS,4.45,years,
+age_error,deviation_range_min,DS,-14,years,Negative = underestimation
+age_error,deviation_range_max,DS,21,years,Positive = overestimation
+age_error,deviation_range_min,NoDS,-9,years,
+age_error,deviation_range_max,NoDS,18,years,
+age_bias_direction,tendency,DS,overestimation,qualitative,Algorithm tends to overestimate DS participants overall
+age_bias_direction,tendency,NoDS,balanced,qualitative,No significant directional bias for NoDS group
+age_gender_bias,female_tendency,DS,underestimation,qualitative,"Women severely underestimated — e.g. actual 24 predicted as 8; actual 23 predicted as 5"
+age_gender_bias,male_tendency,DS,overestimation,qualitative,"Men overestimated — e.g. actual 28 predicted as 33; actual 21 predicted as 33"
+bmi_actual_range,min,DS,22.3,kg/m2,
+bmi_actual_range,max,DS,37.9,kg/m2,Higher average BMI consistent with DS clinical literature
+bmi_predicted_range,min,DS,22.0,kg/m2,
+bmi_predicted_range,max,DS,36.6,kg/m2,
+bmi_actual_range,min,NoDS,18.1,kg/m2,
+bmi_actual_range,max,NoDS,27.6,kg/m2,
+bmi_predicted_range,min,NoDS,22.3,kg/m2,
+bmi_predicted_range,max,NoDS,27.4,kg/m2,
+bmi_error,mean_absolute_error,DS,3.82,kg/m2,
+bmi_error,mean_absolute_error,NoDS,2.98,kg/m2,
+bmi_bias_direction,tendency,DS,overestimation,qualitative,Tendency to overestimate BMI — particularly pronounced for DS women
+bmi_bias_direction,tendency,NoDS,balanced,qualitative,Balanced distribution of over- and underestimation
+smoking_accuracy,note,DS,,qualitative,Insufficient smokers in DS sample (n=1) to draw conclusions on smoking classification accuracy

@@ -1,0 +1,27 @@
+dataset,attribute,category,count,notes
+DS,total_images,,60,Images sourced from internet; individuals with Down Syndrome
+DS,gender,male,30,
+DS,gender,female,30,
+DS,age_range,min,4,years
+DS,age_range,max,57,years
+DS,ethnicity,Asian,10,
+DS,ethnicity,Black,10,
+DS,ethnicity,Indian,10,
+DS,ethnicity,Latino_Hispanic,10,
+DS,ethnicity,Middle_Eastern,10,
+DS,ethnicity,White,10,
+DS,emotion,happy,35,Manually labelled by research team
+DS,emotion,neutral,25,Manually labelled by research team
+NoDS,total_images,,60,"Images of well-known public figures (actors, politicians, singers, astronauts, etc.)"
+NoDS,gender,male,30,
+NoDS,gender,female,30,
+NoDS,age_range,min,17,years
+NoDS,age_range,max,73,years
+NoDS,ethnicity,Asian,10,
+NoDS,ethnicity,Black,10,
+NoDS,ethnicity,Indian,10,
+NoDS,ethnicity,Latino_Hispanic,10,
+NoDS,ethnicity,Middle_Eastern,10,
+NoDS,ethnicity,White,10,
+NoDS,emotion,happy,32,Manually labelled by research team
+NoDS,emotion,neutral,28,Manually labelled by research team
